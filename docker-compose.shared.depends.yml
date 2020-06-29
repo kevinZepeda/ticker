@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  backend:
+    depends_on:
+      - db
+  celeryworker:
+    depends_on:
+      - db
+      - queue

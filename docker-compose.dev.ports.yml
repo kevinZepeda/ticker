@@ -1,0 +1,15 @@
+version: '2.0'
+services:
+  adminer:
+    ports:
+      - '5050:8080'
+  proxy:
+    ports:
+      - '80:80'
+      - '8090:8080'
+  flower:
+    ports:
+      - '5555:5555'
+  backend:
+    ports:
+      - '8888:8888'
